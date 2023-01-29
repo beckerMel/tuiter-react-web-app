@@ -1,14 +1,19 @@
 For uploading an image, do we need to restrict the file type so that the
 user can't just upload anything?
+- type = file is fine
 
 Is it okay to just hard-"code" the timestamp and reply counts by typing it like we would any other
 text?
+- just make it look like example
 
 Should the last tuit also be by us, or by someone different like in the example?
+- they don't care about the content
 
 When to put things under different form labels
+- your intuition was correct
 
-What to do about weird wrapping thing making text format weirdly
+Wrapping issues with URLs
+
 
 How to make default text (just check the notes once you have your signal again lmao)
 
