@@ -1,20 +1,5 @@
-For uploading an image, do we need to restrict the file type so that the
-user can't just upload anything?
-- type = file is fine
+images are floated - fine?
 
-Is it okay to just hard-"code" the timestamp and reply counts by typing it like we would any other
-text?
-- just make it look like example
+how to get the magnifying glass in the search bar
 
-Should the last tuit also be by us, or by someone different like in the example?
-- they don't care about the content
-
-When to put things under different form labels
-- your intuition was correct
-
-Wrapping issues with URLs
-
-
-How to make default text (just check the notes once you have your signal again lmao)
-
-Also you ned to get a banner photo when you have signal
+do you guys care if we have every tuit there
