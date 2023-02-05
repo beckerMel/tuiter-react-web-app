@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    margin-left: 16px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+hr {
+    color: rgb(47, 51, 54);
+}
+
+.wd-tuit-author {
+    font-weight: bold;
+    color: white;
+}

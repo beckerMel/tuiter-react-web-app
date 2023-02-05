@@ -1,5 +1,10 @@
 body {
     background-color: black;
+    margin-left: 16px;
+}
+
+hr {
+    color: rgb(47, 51, 54);
 }
 
 #settings-gear {

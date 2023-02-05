@@ -3,3 +3,10 @@ images are floated - fine?
 how to get the magnifying glass in the search bar
 
 do you guys care if we have every tuit there
+
+tuit body for bookmarks has 60 px border from left bc image is floated - what do
+
+hyperlink pointing to "#"
+
+More elegant way to do the icons - seems silly to have wd-icons class just for the
+sake of margin-top 12px
