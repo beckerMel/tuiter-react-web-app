@@ -5,6 +5,7 @@ body {
 
 hr {
     color: rgb(47, 51, 54);
+    border-bottom: none;
 }
 
 #settings-gear {
