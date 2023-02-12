@@ -228,9 +228,13 @@ hr {
     font-weight: bold;
 }
 
+#user-nav-menu .fas {
+    font-size: 1.3em;
+}
+
 #user-nav-menu .list-group-item {
     padding-bottom: 15px;
-    font-size: 18px;
+    font-size: 17px;
     padding-left:
 }
 
@@ -240,6 +244,7 @@ hr {
 
 .card {
     border-color: rgb(240,240,240);
+    border-radius: 0px;
 }
 
 .main-content-box li {
