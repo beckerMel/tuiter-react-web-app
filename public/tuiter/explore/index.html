@@ -3,73 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <title>Tuiter</title>
-    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css"
+          rel="stylesheet"/>
+    <link href="index.css"
+          rel="stylesheet"/>
 </head>
 <body>
-    <a href="explore-settings.html" id="settings-gear">&#9881;</a>
-    <form>
-        <input class="wd-search-bar"
-               type="text"
-               placeholder="&#128270 Search Tuiter">
-    </form>
-    <a class="wd-menu-tab" href=""><span class="wd-active">For you</span></a>
-    <a class="wd-menu-tab" href=""><span>Trending</span></a>
-    <a class="wd-menu-tab" href=""><span>COVID-19</span></a>
-    <a class="wd-menu-tab" href=""><span>News</span></a>
-    <a class="wd-menu-tab" href=""><span>Sports</span></a>
-    <a class="wd-menu-tab" href=""><span>Entertainment</span></a>
-    <br class="wd-menu-newline"/>
-    <hr/>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 col-lg-1 col-xl-2 mt-1">
+                <ul id="user-nav-menu" class="list-group mb-2">
+                    <li class="list-group-item"><span class="fas fa-kiwi-bird"></span></li>
+                    <li class="list-group-item"><span class="fas fa-home"></span>
+                        <span class="d-none d-xl-inline">Home</span>
+                    </li>
+                    <li class="list-group-item active"><span class="fas fa-hashtag"></span>
+                        <span class="d-none d-xl-inline">Explore</span>
+                    </li>
+                    <li class="list-group-item"><span class="fas fa-bell"></span>
+                        </span>
+                        <span class="d-none d-xl-inline">Notifications</span>
+                    </li>
+                    <li class="list-group-item"><span class="fas fa-envelope"></span>
+                        <span class="d-none d-xl-inline">Messages</span>
+                    </li>
+                    <li class="list-group-item"><span class="fas fa-bookmark"></span>
+                        <span class="d-none d-xl-inline">Bookmarks</span>
+                    </li>
+                    <li class="list-group-item"><span class="fas fa-list"></span>
+                        <span class="d-none d-xl-inline">Lists</span>
+                    </li>
+                    <li class="list-group-item"><span class="fas fa-user"></span>
+                        <span class="d-none d-xl-inline">Profile</span>
+                    </li>
+                    <li class="list-group-item mb-2"><span class="fas fa-ellipsis-h"></span>
+                        <span class="d-none d-xl-inline">More</span>
+                    </li>
+                    <button id=tuit-button type="button" class="btn btn-primary btn-block">
+                        Tuit</button>
+                </ul>
 
-    <div class="wd-tuit">
-        <div class="wd-tuit-topic">Trending in Science</div>
-        <div class="wd-tuit-title">Starship</div>
-        <div class="wd-tuit-count">55.5K Tuits</div>
+            </div>
+
+            <div id="for-you-content" class="col-10 col-lg-7 col-xl-6 mt-1 mb-4">
+                <div id="search-bar-section">
+                    <a href="explore-settings.html"
+                       id="settings-gear"><span class="fas fa-cog fa-2x mt-1"></span></a>
+                    <form class="wd-search-bar mb-2">
+                        <span class="fas fa-search wd-magnifying-glass"></span>
+                        <input type="text"
+                               placeholder="Search Tuiter">
+                    </form>
+                </div>
+
+                <ul class="nav nav-tabs mb-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li> <br/>
+                </ul>
+
+                <div class="main-content-box card">
+                    <div class="wd-main-content-photo">
+                        <p class="wd-card-caption ms-1 mb-0">
+                            SpaceX's Starship
+                        </p>
+                        <img class="card-img-top"
+                             src="images/space-x.jpeg">
+                    </div>
+                        <ul class="list-group">
+                            <li class="list-group-item tuit">
+                                <div class="wd-tuit">
+                                    <img class="wd-tuit-image" src="images/react-js-logo.png">
+                                    <div class="wd-tuit-topic">Web Development</div>
+                                    <div class="wd-tuit-author">
+                                        ReactJS
+                                        <span class="fas fa-check-circle mb-1"></span>
+                                        <span class="wd-timestamp">- 2h</span>
+                                    </div>
+                                    <div class="wd-tuit-content">
+                                        React.js is a component based front end library that makes it
+                                        very easy to build Single Page Applications or SPAs
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item tuit">
+                                <div class="wd-tuit">
+                                    <img class="wd-tuit-image" src="images/js-logo.png">
+                                    <div class="wd-tuit-author">
+                                        JavaScript
+                                        <span class="fas fa-check-circle mb-1"></span>
+                                        <span class="wd-timestamp">- 2h</span>
+                                    </div>
+                                    <div class="wd-tuit-content">
+                                        JavaScript is a programming language that can run on browsers
+                                        as well as desktops
+                                    </div>
+                                    <div class="wd-tuit-count">123K Tuits</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item tuit">
+                                <div class="wd-tuit">
+                                    <img class="wd-tuit-image" src="images/jquery.png">
+                                    <div class="wd-tuit-topic">Web Development</div>
+                                    <div class="wd-tuit-content">
+                                        jQuery
+                                    </div>
+                                    <div class="wd-tuit-count">123K Tuits</div>
+                                </div>
+                            </li>
+                            <li class="list-group-item tuit">
+                                <div class="wd-tuit">
+                                    <img class="wd-tuit-image" src="images/node-js-logo.png">
+                                    <div class="wd-tuit-topic">Web Development</div>
+                                    <div class="wd-tuit-author">
+                                        NodeJS
+                                        <span class="fas fa-check-circle mb-1"></span>
+                                        <span class="wd-timestamp">- 2h</span>
+                                    </div>
+                                    <div class="wd-tuit-count">123K Tuits</div>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <div id="suggested-follows" class="d-none d-lg-block col-lg-4 mt-1">
+                <ul class="list-group">
+                    <li class="list-group-item">Who to follow</li>
+                    <li class="list-group-item">
+                        <img class="wd-profile-icon me-2" src="images/java.png"/>
+                        <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                        Java <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@Java</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="wd-profile-icon me-2" src="images/relativity-space-logo.jpg"/>
+                        <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                        Relativity Space <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@relativityspace</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="wd-profile-icon me-2" src="images/virgin-galactic-logo.svg"/>
+                        <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                        Virgin Galactic <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@relativityspace</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="wd-profile-icon me-2" src="images/nasa-logo.png"/>
+                        <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                        NASA <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@NASA</span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="wd-profile-icon me-2" src="images/tesla-logo.png"/>
+                        <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                        Tesla <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@Tesla</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="wd-tuit">
-        <div class="wd-tuit-topic">Sports - Trending</div>
-        <div class="wd-tuit-title">Joe Rogan</div>
-        <div class="wd-tuit-count">5,218 Tuits</div>
-    </div>
-
-    <div class="wd-tuit wd-has-image">
-        <img class="wd-tuit-image" src="images/news-report.jpeg">
-        <div> <span class="wd-tuit-author">The New York Times</span>
-            <span class="wd-timestamp"> &#183 Yesterday</span></div>
-        <div class="wd-tuit-title">CNN's Cuomo conundrum: a star anchor with a brother in
-            trouble</div>
-    </div>
-
-
-    <div class="wd-tuit wd-has-image">
-        <img class="wd-tuit-image" src="images/massachusetts-covid.png">
-        <div>
-        <span class="wd-tuit-topic">COVID-19</span><span class="wd-timestamp"> &#183 LIVE</span></div>
-        <div class="wd-tuit-title">COVID-19 in Massachusetts</div>
-    </div>
-
-    <div class="wd-tuit wd-has-image">
-        <img class="wd-tuit-image" src="images/random1.jpg">
-        <div> <span class="wd-tuit-author">Authored Post</span>
-            <span class="wd-timestamp"> &#183 11:58 AM</span></div>
-        <div class="wd-tuit-title">Content</div>
-    </div>
-
-    <div class="wd-tuit wd-has-image">
-        <img class="wd-tuit-image" src="images/random2.jpg">
-        <div>
-            <span class="wd-tuit-topic">Topic of Post With No Author</span>
-            <span class="wd-timestamp"> &#183 Yesterday</span></div>
-        <div class="wd-tuit-title">Extremely strange dog</div>
-    </div>
-
-
-    <div class="wd-tuit">
-        <div class="wd-tuit-topic">Trending in the United States</div>
-        <div class="wd-tuit-title">Wonder Bread</div>
-        <div class="wd-tuit-count">1,259 Tuits</div>
-    </div>
-
 </body>
 </html>

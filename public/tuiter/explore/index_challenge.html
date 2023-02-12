@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuiter</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link href="../../vendors/fontawesome/css/all.css"
+          rel="stylesheet"/>
+    <link href="index_challenge.css"
+          rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 col-lg-1 col-xl-2 mt-1">
+            <ul id="user-nav-menu" class="list-group mb-2 pe-4">
+                <li class="list-group-item"><span class="fas fa-kiwi-bird"></span></li>
+                <li class="list-group-item"><span class="fas fa-home"></span><span
+                        class="d-none d-xl-inline wd-item-label">Home</span>
+                </li>
+                <li class="list-group-item wd-active"><span class="fas fa-hashtag"></span><span
+                        class="d-none d-xl-inline wd-item-label">Explore</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-bell"></span><span
+                        class="d-none d-xl-inline wd-item-label">Notifications</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-envelope"></span><span
+                        class="d-none d-xl-inline wd-item-label">Messages</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-bookmark"></span>
+                    <span class="d-none d-xl-inline wd-item-label">Bookmarks</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-fire"></span><span
+                        class="d-none d-xl-inline wd-item-label">Top Articles</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-user"></span><span
+                        class="d-none d-xl-inline wd-item-label">Profile</span>
+                </li>
+                <li class="list-group-item"><span class="fas fa-ellipsis-h"></span><span
+                        class="d-none d-xl-inline wd-item-label">More</span>
+                </li>
+                <button id=tuit-button type="button" class="btn btn-primary btn-block">
+                    Tuit</button>
+            </ul>
+
+        </div>
+
+        <div id="for-you-content" class="col-10 col-lg-7 col-xl-6 mt-1 mb-4">
+            <div id="search-bar-section" class="flex-center-vertical">
+                <form class="wd-search-bar mb-2">
+                    <span class="fas fa-search wd-magnifying-glass me-3"></span>
+                    <input type="text"
+                           placeholder="Search Tuiter">
+                </form>
+                <div id="settings-gear">
+                    <a href="explore-settings.html"><span class="fas fa-cog mb-2 ms-4"></span></a>
+                </div>
+            </div>
+
+<!--            <ul class="nav nav-tabs mb-2">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" href="for-you.html">For you</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="trending.html">Trending</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="news.html">News</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="sports.html">Sports</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item d-none d-md-block">-->
+<!--                    <a class="nav-link" href="entertainment.html">Entertainment</a>-->
+<!--                </li> <br/>-->
+<!--            </ul>-->
+            <div id="content-tabs" class="flex-space-around me-0">
+                <div>
+                    <a class="wd-menu-tab wd-leftmost" href="for-you.html"><span class="wd-active">
+                        For you</span></a>
+                </div>
+                <div>
+                    <a class="wd-menu-tab" href="trending.html"><span>Trending</span></a>
+                </div>
+                <div class="flex-box">
+                    <a class="wd-menu-tab" href="news.html"><span>News</span></a>
+                </div>
+                <div class="flex-box">
+                    <a class="wd-menu-tab" href="sports.html"><span>Sports</span></a>
+                </div>
+                <div class="flex-box">
+                    <a class="wd-menu-tab d-none d-md-block" href="entertainment.html"><span>
+                    Entertainment</span></a>
+                </div>
+            </div>
+
+            <div class="main-content-box card mt-1">
+                <div class="wd-main-content-photo">
+                    <p class="wd-card-caption ms-1 mb-0">
+                        <span class="wd-sub-caption">Tennis Tournament &#x2022 LIVE</span><br/>
+                        <span class="wd-main-caption">Australian Open 2023</span>
+                    </p>
+                    <img class="card-img-top"
+                         src="images/australian-open.jpg">
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item tuit">
+                        <span class="fas fa-ellipsis-h wd-tuit-see-more"></span>
+                        <div class="wd-tuit">
+                            <div class="wd-tuit-topic">Politics &#x2022 Trending</div>
+                            <div class="wd-tuit-content">
+                                Seizures
+                            </div>
+                            <div class="wd-tuit-count">4,953 Tuits</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item tuit">
+                        <span class="fas fa-ellipsis-h wd-tuit-see-more"></span>
+                        <div class="wd-tuit">
+                            <div class="wd-tuit-author">
+                                #InfinityPool
+                                <div class="wd-tuit-caption">
+                                    See the electrifying thriller Infinity Pool in theaters - if
+                                    you dare
+                                </div>
+                            </div>
+                            <div class="wd-tuit-count">Promoted
+                                by NEON</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item tuit">
+                        <span class="fas fa-ellipsis-h wd-tuit-see-more"></span>
+                        <div class="wd-tuit">
+                            <div class="wd-tuit-topic">Sports &#x2022 Trending</div>
+                            <div class="wd-tuit-content">
+                                RIP Bean
+                            </div>
+                            <div class="wd-tuit-count">18K Tuits</div>
+                        </div>
+                    </li>
+                    <li class="list-group-item tuit">
+                        <span class="fas fa-ellipsis-h wd-tuit-see-more"></span>
+                        <div class="wd-tuit">
+                            <div class="wd-tuit-topic">Politics &#x2022 Trending</div>
+                            <div class="wd-tuit-content">
+                                Durham
+                            </div>
+                            <div class="wd-tuit-count">4,953 Tuits</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-4 mt-1 ps-4 pe-4">
+            <ul id="suggested-follows" class="list-group">
+                <li class="list-group-item"
+                    id="suggested-follows-title">Who to
+                    follow</li>
+                <li class="wd-flex-container flex-center-vertical list-group-item">
+                    <img class="wd-profile-icon me-2" src="images/java.png"/>
+                    <div>
+                        Java <span class="fas fa-check-circle mb-1"></span><br/>
+                        <span class="wd-handle">@Java</span>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary wd-follow-button">
+                            Follow</button>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <img class="wd-profile-icon me-2" src="images/relativity-space-logo.jpg"/>
+                    <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                    Relativity Space <span class="fas fa-check-circle mb-1"></span><br/>
+                    <span class="wd-handle">@relativityspace</span>
+                </li>
+                <li class="list-group-item">
+                    <img class="wd-profile-icon me-2" src="images/virgin-galactic-logo.svg"/>
+                    <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                    Virgin Galactic <span class="fas fa-check-circle mb-1"></span><br/>
+                    <span class="wd-handle">@relativityspace</span>
+                </li>
+                <li class="list-group-item">
+                    <img class="wd-profile-icon me-2" src="images/nasa-logo.png"/>
+                    <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                    NASA <span class="fas fa-check-circle mb-1"></span><br/>
+                    <span class="wd-handle">@NASA</span>
+                </li>
+                <li class="list-group-item">
+                    <img class="wd-profile-icon me-2" src="images/tesla-logo.png"/>
+                    <button type="button" class="btn btn-primary wd-follow-button">Follow</button>
+                    Tesla <span class="fas fa-check-circle mb-1"></span><br/>
+                    <span class="wd-handle">@Tesla</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--TO DO
+   - "show more"
+   - I think change to australian open photo, it will just bias the graders in your favor probably
+   - three dots under the spaceX's starship one
+   - make the text more to the left
+   - maybe do something about how the image gets
+     ugly on small screen
+   - hide entertainment for small screen
+   - make who to follow bolder and bigger
+   - gear icon
+   - make tab fonts slightly bigger
+   - center follow buttons in the other one
+-->

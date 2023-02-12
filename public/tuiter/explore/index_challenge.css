@@ -1,0 +1,255 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+hr {
+    color: rgb(47, 51, 54);
+    border-bottom: none;
+}
+
+.fas {
+    margin: 0px;
+}
+
+#settings-gear {
+    text-decoration: none;
+    float: right;
+    margin-left: 12px;
+}
+
+#search-bar-section {
+    display: flex;
+}
+
+.fa-cog {
+    color: black;
+}
+
+.btn {
+    border-radius: 500px;
+}
+
+.btn-primary {
+    background-color: rgb(0, 160, 260);
+    border-color: rgb(0, 160, 260);
+    font-weight: bold;
+}
+
+.wd-handle {
+    font-weight: normal;
+}
+
+.wd-tuit-separator {
+    height: 10px;
+    border-color: rgb(110, 118, 125);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-search-bar {
+    border-radius: 50px;
+    border-style: solid;
+    width: 90%;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 7px;
+}
+
+.wd-search-bar .wd-magnifying-glass {
+    margin-right: 12px;
+}
+
+.wd-search-bar input {
+    border: none;
+    outline: none;
+    position: absolute;
+    background-color: transparent;
+
+}
+
+.nav-tabs {
+    border: none;
+    color: black;
+}
+
+.nav-item .active {
+    font-weight: bold;
+    border: none;
+    color: black;
+}
+
+#content-tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wd-menu-tab {
+    float: left;
+    color: black;
+    font-size: 15px;
+    padding: 16px;
+    text-decoration: none;
+    font-family: system-ui;
+    font-weight: bold;
+    color: rgb(150, 150, 150);
+}
+
+#content-tabs .wd-active {
+    border: 0px;
+    padding-bottom: 16px;
+    border-bottom: 4px;
+    border-style: solid;
+    border-color: rgb(0, 160, 260);
+    color: black;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.wd-menu-newline {
+    clear: both;
+}
+
+.wd-tuit-topic {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    font-weight: normal;
+}
+
+.wd-tuit {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.wd-has-image {
+    height: 100px;
+}
+
+.wd-tuit-title {
+    font-weight: bold;
+}
+
+.wd-tuit-author {
+    font-weight: bold;
+}
+
+.wd-tuit-image {
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 90px;
+    height: 90px;
+    float: right;
+}
+
+.wd-tuit-count {
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-tuit-caption {
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+}
+
+.wd-timestamp {
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+}
+
+.wd-main-content-photo {
+    position: relative;
+}
+
+.wd-main-content-photo .card-img-top {
+    z-index: 0;
+    height: 430px;
+}
+
+.wd-main-content-photo .wd-card-caption {
+    z-index: 1;
+    position: absolute;
+    color: white;
+    bottom: 8px;
+    left: 16px;
+}
+
+.wd-card-caption .wd-main-caption {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.list-group .list-group-item {
+    border: none;
+}
+
+#suggested-follows .wd-follow-button {
+    float: right;
+    color: white;
+    display: flex;
+    background-color: black;
+    border-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#suggested-follows .wd-profile-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+}
+
+#suggested-follows {
+    font-weight: bold;
+}
+
+#suggested-follows .list-group-item {
+    background-color: rgb(247,247,247);
+}
+
+#suggested-follows-title {
+    font-size: 20px;
+}
+
+#suggested-follows .fa-check-circle {
+    color: rgb(0, 160, 260);
+}
+
+#user-nav-menu .wd-active {
+    font-weight: bold;
+}
+
+#user-nav-menu .list-group-item {
+    padding-bottom: 15px;
+    font-size: 18px;
+    padding-left:
+}
+
+#user-nav-menu .wd-item-label {
+    margin-left: 20px;
+}
+
+.card {
+    border-color: rgb(240,240,240);
+}
+
+.main-content-box li {
+    margin-bottom: 15px;
+}
+
+.wd-tuit-see-more {
+    float: right;
+    font-weight: bold;
+    color: rgb(150,150,150);
+}
+
+.wd-flex-container {
+    display: flex;
+}
+
+.flex-center-vertical {
+    align-items: center;
+}

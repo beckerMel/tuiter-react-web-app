@@ -1,8 +1,3 @@
-body {
-    background-color: black;
-    margin-left: 16px;
-}
-
 hr {
     color: rgb(47, 51, 54);
     border-bottom: none;
@@ -10,10 +5,17 @@ hr {
 
 #settings-gear {
     text-decoration: none;
+    color: rgb(29, 110, 242);
     float: right;
-    margin-right: 12px;
-    font-size: 20px;
-    color: rgb(29, 161, 242);
+    margin-left: 12px;
+}
+
+.btn {
+    border-radius: 500px;
+}
+
+.wd-handle {
+    font-weight: normal;
 }
 
 .wd-tuit-separator {
@@ -25,13 +27,22 @@ hr {
 }
 
 .wd-search-bar {
-    border-radius: 20px;
-    margin-left: 16px;
-    width: 450px;
-    border: 0px;
+    border-radius: 50px;
+    border-style: solid;
+    width: 90%;
+    border-color: rgb(211, 211, 211);
     padding: 7px;
-    background-color: rgb(30, 30, 30);
-    color: white;
+}
+
+.wd-search-bar .wd-magnifying-glass {
+    margin-right: 12px;
+}
+
+.wd-search-bar input {
+    border: none;
+    outline: none;
+    position: absolute;
+    background-color: transparent;
 }
 
 .wd-menu-tab {
@@ -56,12 +67,13 @@ hr {
     clear: both;
 }
 
-.wd-tuit {
-    font-size: 13px;
+.wd-tuit-topic {
     color: rgb(110, 118, 125);
-    padding: 15px;
-    padding-top: 7.wd-5px;
-    padding-bottom: 7.wd-5px;
+    font-weight: normal;
+}
+
+.wd-tuit {
+    font-weight: bold;
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -71,28 +83,65 @@ hr {
 
 .wd-tuit-title {
     font-weight: bold;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 15px;
 }
 
 .wd-tuit-author {
     font-weight: bold;
-    color: white;
 }
 
 .wd-tuit-image {
     border-radius: 20px;
-    width: 100px;
-    height: 100px;
-    border-right: 16px;
-    border-top: 5px;
+    margin-left: 10px;
+    width: 90px;
+    height: 90px;
     float: right;
-    margin-top: 0px;
 }
 
-.wd-timestamp: {
+.wd-tuit-count {
     font-weight: normal;
     color: rgb(110, 118, 125);
+}
+.wd-timestamp {
+    font-weight: normal;
+    color: rgb(110, 118, 125);
+}
+
+.wd-photo-caption {
+    position: absolute;
+    margin-top: 0;
+    color: red;
+}
+
+.wd-main-content-photo {
+    position: relative;
+}
+
+.wd-main-content-photo .card-img-top {
+    z-index: 0;
+    height: 430px;
+}
+
+.wd-main-content-photo .wd-card-caption {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#suggested-follows .wd-follow-button {
+    float: right;
+    color: white;
+}
+
+#suggested-follows .wd-profile-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+}
+
+#suggested-follows {
+    font-weight: bold;
 }

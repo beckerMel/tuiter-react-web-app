@@ -1,14 +1,20 @@
-images are floated - fine?
+I think my card is slightly too wide and the images aren't exactly the right size
+- is it a font issue?
 
-how to get the magnifying glass in the search bar
+Getting the SpaceX's Starship caption in the right place
 
-do you guys care if we have every tuit there
+centering the gear and follow buttons vertically
+    - making the icons transparent
 
-tuit body for bookmarks has 60 px border from left bc image is floated - what do
+T Icon
 
-hyperlink pointing to "#"
+Image gets super skinny as page shrinks but I obviously can't set a specific width...? is it a
+percent thing?
 
-More elegant way to do the icons - seems silly to have wd-icons class just for the
-sake of margin-top 12px
+Can the challenge section text be the same content as the tuiter section
 
-Give avatar margin 12 right
+Making the font awesome icons transparent
+fa-inverse
+Challenge screen resizing
+
+Overriding active for bootstrap
