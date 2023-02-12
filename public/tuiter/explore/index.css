@@ -119,13 +119,14 @@ hr {
 .wd-main-content-photo .card-img-top {
     z-index: 0;
     height: auto;
-    width: autho;
+    width: 100%;
 }
 
 .wd-main-content-photo .wd-card-caption {
     z-index: 1;
     position: absolute;
     bottom: 8px;
+    left: 8px;
     color: white;
     font-weight: bold;
     font-size: 35px;
@@ -146,3 +147,16 @@ hr {
 #suggested-follows {
     font-weight: bold;
 }
+
+.wd-flex-container {
+    display: flex;
+}
+
+.flex-center-vertical {
+    align-items: center;
+}
+
+.wd-flex-sb {
+    justify-content: space-between;
+}
+
