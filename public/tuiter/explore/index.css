@@ -118,7 +118,8 @@ hr {
 
 .wd-main-content-photo .card-img-top {
     z-index: 0;
-    height: 430px;
+    height: auto;
+    width: autho;
 }
 
 .wd-main-content-photo .wd-card-caption {

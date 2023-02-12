@@ -21,6 +21,10 @@ hr {
     display: flex;
 }
 
+.wd-search-bar .fa-search {
+    color: rgb(150,150,150);
+}
+
 .fa-cog {
     color: black;
 }
@@ -113,7 +117,7 @@ hr {
 }
 
 .wd-tuit-topic {
-    font-size: 15px;
+    font-size: 14px;
     color: rgb(110, 118, 125);
     font-weight: normal;
 }
@@ -146,7 +150,7 @@ hr {
 .wd-tuit-count {
     font-weight: normal;
     color: rgb(110, 118, 125);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .wd-tuit-caption {
@@ -165,7 +169,8 @@ hr {
 
 .wd-main-content-photo .card-img-top {
     z-index: 0;
-    height: 430px;
+    height: auto;
+    width: autho;
 }
 
 .wd-main-content-photo .wd-card-caption {
@@ -204,6 +209,7 @@ hr {
 
 #suggested-follows {
     font-weight: bold;
+    border-radius: 20px;
 }
 
 #suggested-follows .list-group-item {
@@ -252,4 +258,8 @@ hr {
 
 .flex-center-vertical {
     align-items: center;
+}
+
+.wd-flex-sb {
+    justify-content: space-between;
 }
