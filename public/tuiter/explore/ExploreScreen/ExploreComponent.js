@@ -39,7 +39,7 @@ return(`
                 SpaceX's Starship
             </p>
             <img class="card-img-top"
-                 src="../../../images/space-x.jpeg">
+                 src="../../images/space-x.jpeg">
         </div>
         ${PostSummaryList()}
     </div>

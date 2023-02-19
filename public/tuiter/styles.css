@@ -1,14 +1,186 @@
-body {
-    background-color: black;
-    margin-left: 16px;
-    font-family: "Gill Sans", sans-serif;
+#wd-explore {
+    color: white;
 }
 
 hr {
     color: rgb(47, 51, 54);
+    border-bottom: none;
+}
+
+#settings-gear {
+    text-decoration: none;
+    color: rgb(29, 110, 242);
+    float: right;
+    margin-left: 12px;
+}
+
+.btn {
+    border-radius: 500px;
+}
+
+.wd-handle {
+    font-weight: normal;
+}
+
+.wd-tuit-separator {
+    height: 10px;
+    border-color: rgb(110, 118, 125);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-search-bar {
+    border-radius: 50px;
+    border-style: solid;
+    border: none;
+    background-color: white;
+    width: 90%;
+    border-color: rgb(211, 211, 211);
+    padding: 7px;
+}
+
+.wd-search-bar .wd-magnifying-glass {
+    color: rgb(170, 170, 170);
+    margin-right: 12px;
+}
+
+.wd-search-bar input {
+    border: none;
+    outline: none;
+    position: absolute;
+    background-color: transparent;
+}
+
+.wd-menu-tab {
+    float: left;
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    font-family: "Gill Sans", sans-serif;
+    text-decoration: none;
+}
+
+.wd-active {
+    color: rgb(29, 161, 242);
+    border: 0px;
+    padding-bottom: 16px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: rgb(29, 161, 242);
+}
+
+.wd-menu-newline {
+    clear: both;
+}
+
+.wd-tuit-topic {
+    color: rgb(100, 98, 115);
+    font-weight: normal;
+}
+
+.wd-tuit {
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+
+}
+
+.wd-has-image {
+    height: 100px;
+}
+
+.wd-tuit-title {
+    font-weight: bold;
 }
 
 .wd-tuit-author {
     font-weight: bold;
+}
+
+.wd-tuit-image {
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 90px;
+    height: 90px;
+    float: right;
+}
+
+.wd-tuit-count {
+    font-weight: normal;
+    color: rgb(100, 98, 115);
+}
+.wd-timestamp {
+    font-weight: normal;
+    color: rgb(100, 98, 115);
+}
+
+.wd-photo-caption {
+    position: absolute;
+    margin-top: 0;
+    color: red;
+}
+
+.wd-main-content-photo {
+    position: relative;
+    margin-bottom: 7px;
+}
+
+.wd-main-content-photo .card-img-top {
+    z-index: 0;
+    height: auto;
+    width: 100%;
+}
+
+.wd-main-content-photo .wd-card-caption {
+    z-index: 1;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#suggested-follows .wd-follow-button {
+    float: right;
     color: white;
+}
+
+.wd-profile-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+    margin-right: 16px;
+}
+
+#suggested-follows {
+    font-weight: bold;
+}
+
+.wd-flex-container {
+    display: flex;
+}
+
+.flex-center-vertical {
+    align-items: center;
+}
+
+.flex-center-horizontal {
+    justify-content: center;
+}
+
+.wd-flex-sb {
+    justify-content: space-between;
+}
+
+.wd-icon {
+    margin-right: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-bullet-less {
+ list-style: none;
 }

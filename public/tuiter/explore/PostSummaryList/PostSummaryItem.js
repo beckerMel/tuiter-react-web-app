@@ -18,8 +18,3 @@ return(`
 };
 
 export default PostSummaryItem;
-
-/* Experiment:
-- Check if nullish coalescing operator works
-- Check if you can remove the right and side operand for ternary
-*/
