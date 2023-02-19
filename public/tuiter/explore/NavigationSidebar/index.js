@@ -1,12 +1,18 @@
-const NavigationSidebar = () => {
+import isEqual from "./isEqual.js";
+
+const NavigationSidebar = (active) => {
  return(`
         <ul id="user-nav-menu" class="list-group mb-2">
             <li class="list-group-item"><span class="fas fa-kiwi-bird"></span></li>
-            <li class="list-group-item"><span class="fas fa-home"></span>
-                <span class="d-none d-xl-inline">Home</span>
+            <li class="list-group-item ${isEqual('home', active) ? `active` : ``}">
+            <a href=${isEqual('home', active) ? `'#'` : '../HomeScreen/index.html'}>
+            <span class="fas fa-home"></span>
+                <span class="d-none d-xl-inline">Home</span></a>
             </li>
-            <li class="list-group-item active"><span class="fas fa-hashtag"></span>
-                <span class="d-none d-xl-inline">Explore</span>
+            <li class="list-group-item ${isEqual('explore', active) ? `active` : ``}"">
+            <span class="fas fa-hashtag"></span>
+            <a href=${isEqual('explore', active) ? `'#'` : '../explore/index.html'}>
+                <span class="d-none d-xl-inline">Explore</span></a>
             </li>
             <li class="list-group-item"><span class="fas fa-bell"></span>
                 </span>
