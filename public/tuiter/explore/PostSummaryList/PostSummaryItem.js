@@ -1,7 +1,7 @@
 const PostSummaryItem = (post) => {
 return(`
    <li class="list-group-item">
-    <div class="wd-tuit wd-flex-container flex-center-vertical wd-flex-sb">
+    <div class="wd-tuit wd-flex-container wd-flex-sb">
      <div>
         ${post.topic ? `<div class="wd-tuit-topic">${post.topic}</div>` : ``}
         <div class="wd-tuit-author">
