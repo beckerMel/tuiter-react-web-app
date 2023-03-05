@@ -27,12 +27,6 @@ return(
         </li>
         <li className="nav-item">
             <a className="nav-link" href="news.html">News</a>
-        </li>
-        <li className="nav-item">
-            <a className="nav-link" href="sports.html">Sports</a>
-        </li>
-        <li className="nav-item d-none d-md-block">
-            <a className="nav-link" href="entertainment.html">Entertainment</a>
         </li> <br/>
     </ul>
 
