@@ -4,25 +4,28 @@ import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch, faCog } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faCog, faRetweet, faCheckCircle, faComment, faHeart, faShare, faLink,
+    faEllipsis}
+    from '@fortawesome/free-solid-svg-icons';
 
-library.add(faSearch, faCog);
+library.add(faSearch, faCog, faRetweet, faCheckCircle, faComment, faHeart, faShare, faLink,
+    faEllipsis);
 
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="container">
-        <Routes>
-          <Route index
-                 element={<Labs/>}/>
-          <Route path="/hello"
-                 element={<HelloWorld/>}/>
-          <Route path="/tuiter"
-                 element={<Tuiter/>}/>
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
-}
-export default App;
+   return (
+      <BrowserRouter>
+        <div className="container">
+          <Routes>
+            <Route path="/labs"
+                   element={<Labs/>}/>
+            <Route path="/hello"
+                   element={<HelloWorld/>}/>
+            <Route path="/tuiter/*"
+                   element={<Tuiter/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    );
+  }
+  export default App;

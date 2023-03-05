@@ -1,6 +1,5 @@
 import React from "react";
 import PostSummaryList from "../post-summary-list";
-import "../../styles/styles.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ExploreComponent = () => {
@@ -40,7 +39,7 @@ return(
     <div className="main-content-box">
         <div className="wd-main-content-photo">
             <p className="wd-card-caption ms-1 mb-0">
-                SpaceX's Starship
+                SpaceX Starship
             </p>
             <img className="card-img-top"
                  src="../../images/space-x.jpeg"/>

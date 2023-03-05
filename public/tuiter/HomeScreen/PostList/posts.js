@@ -12,7 +12,7 @@ export default [
         retuits: '3.5K',
         likes: '37.5K',
         link: 'netflix.com',
-        image: '../../images/inspiration4.jpeg',
+        image: 'images/inspiration4.jpeg',
     },
     {
         userName: 'New York Post',

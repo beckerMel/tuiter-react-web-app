@@ -1,0 +1,53 @@
+body {
+    color: white;
+}
+
+.wd-timestamp {
+    color: rgb(100,98,115);
+}
+
+.wd-tuit {
+    font-weight: normal;
+    color: black;
+}
+
+.wd-link-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.wd-no-text {
+    border-radius: 20px;
+}
+
+.wd-post-text {
+    font-size: 17px;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 12px;
+    padding-bottom: 0px;
+}
+
+.wd-link-preview {
+    color: rgb(100,98,115);
+    font-weight: normal;
+}
+
+.wd-link-site {
+    color: rgb(100,98,115);
+}
+
+.wd-icons {
+    color: rgb(100,98,115);
+}
+
+.wd-show-more {
+    float: right;
+    color: rgb(150,150,150);
+    font-size: 1.2em;
+}

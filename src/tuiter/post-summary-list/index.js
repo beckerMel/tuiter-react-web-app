@@ -3,7 +3,7 @@ import postsArray from './posts.json';
 import PostSummaryItem
   from "./post-summary-item";
 
-const PostSummaryList = () => {
+const HomeComponent = () => {
  return(
    <ul className="list-group">
      {
@@ -14,4 +14,4 @@ const PostSummaryList = () => {
    </ul>
  );
 };
-export default PostSummaryList;
+export default HomeComponent;
