@@ -1,0 +1,49 @@
+body {
+    color: rgb(150,150,150);
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#profile-info {
+    position: relative;
+    left: 100px;
+}
+
+#bio {
+    color: black;
+}
+
+.wd-banner-box {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 100px;
+}
+
+#profile-pic {
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    bottom: -75px;
+    left: 100px;
+    border: 10px solid white;
+}
+
+#profile-name {
+    font-size: 1.5em;
+    color: black;
+}
+
+#edit-profile-button {
+    border: 1px solid rgb(150,150,150);
+}
+
+.wd-handle {
+    color: rgb(170,170,170);
+    font-size: 15px;
+}
+

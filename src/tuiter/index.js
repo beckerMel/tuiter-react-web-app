@@ -1,6 +1,7 @@
 import React from "react";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
+import ProfileComponent from "./profile";
 import NavigationSidebar
   from "./navigation-sidebar";
 import WhoToFollowList
@@ -16,16 +17,18 @@ import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
 import TuitList from "./tuits/tuit-list"
 
 
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeTuitsReducer}});
+  {reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeTuitsReducer,
+             profile: profileReducer}});
 
 function Tuiter() {
  return (
    <Provider store={store}>
-       <HomeComponent/>
+       <ProfileComponent/>
    </Provider>
  );
 }

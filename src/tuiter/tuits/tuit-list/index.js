@@ -8,6 +8,7 @@ import {useSelector} from "react-redux";
 const TuitList = () => {
  const tuitsArray= useSelector(
                     (state) => state.homeTuits);
+
  return(
    <ul className="list-group">
      {
