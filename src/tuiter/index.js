@@ -1,5 +1,6 @@
 import React from "react";
 import ExploreComponent from "./explore";
+import HomeComponent from "./home";
 import NavigationSidebar
   from "./navigation-sidebar";
 import WhoToFollowList
@@ -9,18 +10,22 @@ import PostSummaryList
 import {Routes, Route} from "react-router";
 import whoReducer
   from "./reducers/who-reducer";
+import homeTuitsReducer
+  from "./reducers/home-tuits-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
+import TuitList from "./tuits/tuit-list"
+
+
 const store = configureStore(
-  {reducer: {who: whoReducer, tuits: tuitsReducer}});
+  {reducer: {who: whoReducer, tuits: tuitsReducer, homeTuits: homeTuitsReducer}});
 
 function Tuiter() {
  return (
    <Provider store={store}>
-       <PostSummaryList/>
-       <WhoToFollowList/>
+       <HomeComponent/>
    </Provider>
  );
 }
