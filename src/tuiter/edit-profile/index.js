@@ -89,7 +89,7 @@ const EditProfileComponent = () => {
         <label id="birthday-label" className="mt-4 wd-input-title"> Date of Birth: {currProfile
         .dateOfBirth} <br/>
             <input id="birthday-box"
-                className="mt-1 wd-date-box"
+                className="mt-1 mb-5 wd-date-box"
                 type="date"
                 onChange={(event)=>updateBirthday(event.target.value)}/>
         </label>
