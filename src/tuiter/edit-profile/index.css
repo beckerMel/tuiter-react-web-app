@@ -1,0 +1,115 @@
+body {
+    color: rgb(150,150,150);
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+}
+
+#birthday-label {
+    margin-left: 0;
+}
+
+#birthday-box {
+    border-radius: 5px;
+    border: 1px solid rgb(211,211,211);
+}
+
+#profile-info-edit {
+    position: relative;
+}
+
+#bio {
+    color: black;
+}
+
+.wd-banner-box {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 100px;
+}
+
+#profile-pic {
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    position: absolute;
+    bottom: -75px;
+    left: 100px;
+    border: 10px solid white;
+}
+
+#profile-name {
+    font-size: 1.5em;
+    color: black;
+}
+
+#save-bar {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 100;
+    border: 1px solid rgb(150,150,150);
+    color: black;
+    font-size: 1.3em;
+}
+
+.wd-input-box {
+    border: 1px solid rgb(211,211,211);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+}
+
+.wd-input-title {
+    margin-left: 12px;
+}
+
+.wd-text-form {
+    display:block;
+    width:100%;
+    height: 50px;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    font-weight:400;
+    color:#212529;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border-radius:.25rem;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.wd-text-form:focus {
+    color:#212529;
+    background-color:none;
+    outline:0;
+ }
+
+#website-form {
+    height: 40px;
+}
+
+#save-bar > div {
+    margin-top: 15px;
+}
+
+#edit-profile-button {
+    border: 1px solid rgb(150,150,150);
+}
+
+.wd-handle {
+    color: rgb(170,170,170);
+    font-size: 15px;
+}
+

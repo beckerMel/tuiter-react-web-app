@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./profile-index.css";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
@@ -10,6 +10,9 @@ const ProfileComponent = () => {
   return(
   <>
     <div className="wd-banner-box">
+        <div id="top-bar">
+         {currProfile.name}
+        </div>
         <img src={`../../images/${currProfile.bannerPicture}`} id="banner"/>
         <img src={`../../images/${currProfile.profilePicture}`} id="profile-pic"
             className="rounded-circle"/>
@@ -23,7 +26,7 @@ const ProfileComponent = () => {
 
     <div id="profile-info">
         <div className="fw-bolder" id="profile-name">
-            {currProfile.firstName} {currProfile.lastName}
+            {currProfile.name}
         </div>
         <span className="wd-handle">{currProfile.handle}</span>
 

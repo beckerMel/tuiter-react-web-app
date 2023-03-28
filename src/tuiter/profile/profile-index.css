@@ -9,7 +9,18 @@ body {
 
 #profile-info {
     position: relative;
-    left: 100px;
+}
+
+#top-bar {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    background: white;
+    z-index: 100;
+    border: none;
+    color: black;
+    font-size: 1.3em;
 }
 
 #bio {
@@ -24,12 +35,12 @@ body {
 
 #profile-pic {
     border-radius: 200px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     z-index: 1;
     position: absolute;
     bottom: -75px;
-    left: 100px;
+    left: 75px;
     border: 10px solid white;
 }
 
