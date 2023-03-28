@@ -19,7 +19,9 @@ const TuitStats = (
     dispatch(likeTuitToggle(tuit))
  }
  return(
-        <div className="wd-flex-container wd-flex-center-vertical wd-flex-sb p-3 wd-icons">
+    <div className="row">
+        <div className="col-2"></div>
+        <div className="col-10 wd-flex-container wd-flex-center-vertical wd-flex-sb p-3 wd-icons">
                     <div> <FontAwesomeIcon icon="comment" className="wd-icon"/>{tuit.replies}</div>
                     <div> <FontAwesomeIcon icon ="retweet"
                     className="wd-icon"/>{tuit.retuits}</div>
@@ -30,6 +32,7 @@ const TuitStats = (
                     /> {tuit.likes} </div>
                     <div> <FontAwesomeIcon icon="share"/></div>
         </div>
+    </div>
  );
 };
 

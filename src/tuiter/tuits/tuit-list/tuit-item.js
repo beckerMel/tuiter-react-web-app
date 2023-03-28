@@ -23,7 +23,11 @@ const TuitSummaryItem = (
  return(
    <div className="row">
      <div className="col-auto">
-           <img width={50} className="float-end rounded-circle" src={`../../images/${tuit.image}`}/>
+           <img width={50}
+                height={50}
+                className="float-end rounded-circle"
+                src={`../../images/${tuit
+           .image}`}/>
      </div>
      <div className="col-10">
        <i className="bi bi-x-lg float-end"

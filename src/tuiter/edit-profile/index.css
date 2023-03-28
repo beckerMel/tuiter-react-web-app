@@ -32,12 +32,12 @@ body {
 
 #profile-pic {
     border-radius: 200px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     z-index: 1;
     position: absolute;
     bottom: -75px;
-    left: 100px;
+    left: 50px;
     border: 10px solid white;
 }
 

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {createTuit} from "../reducers/home-tuits-reducer";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
@@ -11,10 +11,16 @@ const WhatsHappening = () => {
    }
    dispatch(createTuit(newTuit));
  }
+
+const currProfile = useSelector(
+            (state) => state.profile);
+
  return (
    <div className="row">
      <div className="col-auto">
-       <img src="/images/nasa-logo.png" width={60}/>
+       <img src={`../../images/${currProfile.profilePicture}`} className="rounded-circle"
+       width={50}
+       height={50}/>
      </div>
      <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"

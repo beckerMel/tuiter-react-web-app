@@ -44,6 +44,8 @@ body {
 
 .wd-icons {
     color: rgb(170,170,170);
+    margin-left: -35px;
+    margin-right: 30px;
 }
 
 .wd-show-more {

@@ -1,17 +1,31 @@
 import React from "react";
 import "./profile-index.css";
 import {useSelector} from "react-redux";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const ProfileComponent = () => {
   const currProfile = useSelector(
                (state) => state.profile);
 
+  const navigate = useNavigate();
+  const goBack = () => {
+      navigate(-1);
+  }
+
+
   return(
   <>
     <div className="wd-banner-box">
-        <div id="top-bar">
-         {currProfile.name}
+        <div id="top-bar" className="row">
+            <div className="col-1 wd-back-button">
+                <i className="text-dark bi bi-arrow-left me-5"
+                                onClick={goBack}>
+                </i>
+            </div>
+             <div className="col-11">
+                 <p>{currProfile.name}</p>
+                 <span className="wd-num-tuits">{currProfile.numTuits} Tuits</span>
+            </div>
         </div>
         <img src={`../../images/${currProfile.bannerPicture}`} id="banner"/>
         <img src={`../../images/${currProfile.profilePicture}`} id="profile-pic"

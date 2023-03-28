@@ -7,7 +7,7 @@ const initialState =
   bio: 'Bark bark bark bark bark bark bark bark bark bark bark bark bark bark bark bark bark bark',
   website: 'grca.org',
   location: 'Boston, MA',	dateOfBirth: '03/17/2021',	dateJoined: '3/2021',
-  followingCount: 340000,	followersCount: 223
+  followingCount: 340000,	followersCount: 223,    numTuits: 0,
 }
 
 const profileSlice = createSlice({
