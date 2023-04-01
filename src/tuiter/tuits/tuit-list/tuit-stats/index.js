@@ -25,15 +25,14 @@ const TuitStats = (
                     <div> <FontAwesomeIcon icon ="retweet"
                     className="wd-icon"/>{tuit.retuits}</div>
                     <div>
-                         Likes: {tuit.likes}
                          <i onClick={() => {
                             dispatch(updateTuitThunk({
                            ...tuit,
                            likes: tuit.likes + 1
                          }));
                          console.log("clicked, likes are " + tuit.likes);
-                         }} className="bi
-                         bi-heart-fill me-2 text-danger"></i>
+                         }} className="bi bi-heart-fill me-2 text-danger"></i>
+                         {tuit.likes}
                        </div>
                     <div> <FontAwesomeIcon icon="share"/></div>
         </div>
