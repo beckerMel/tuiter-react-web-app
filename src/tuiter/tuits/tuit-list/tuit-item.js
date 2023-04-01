@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {deleteTuit} from "../../reducers/home-tuits-reducer.js";
+import {deleteTuitThunk} from "../../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const TuitSummaryItem = (
@@ -18,7 +18,7 @@ const TuitSummaryItem = (
 
  const dispatch = useDispatch();
  const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
  }
  return(
    <div className="row">

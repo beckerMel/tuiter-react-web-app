@@ -1,6 +1,6 @@
 import "../../index.css"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {likeTuitToggle} from "../../../reducers/home-tuits-reducer.js"
+import {updateTuitThunk} from "../../../../services/tuits-thunks"
 import {useSelector, useDispatch} from 'react-redux'
 
 
@@ -15,9 +15,8 @@ const TuitStats = (
  }) => {
  const dispatch = useDispatch();
 
- const onLike = () => {
-    dispatch(likeTuitToggle(tuit))
- }
+
+
  return(
     <div className="row">
         <div className="col-2"></div>
@@ -25,11 +24,17 @@ const TuitStats = (
                     <div> <FontAwesomeIcon icon="comment" className="wd-icon"/>{tuit.replies}</div>
                     <div> <FontAwesomeIcon icon ="retweet"
                     className="wd-icon"/>{tuit.retuits}</div>
-                    <div> <FontAwesomeIcon onClick = {onLike} icon="heart" className={tuit.liked ?
-                    "text-danger wd-icon"
-                    :
-                    "wd-icon"}
-                    /> {tuit.likes} </div>
+                    <div>
+                         Likes: {tuit.likes}
+                         <i onClick={() => {
+                            dispatch(updateTuitThunk({
+                           ...tuit,
+                           likes: tuit.likes + 1
+                         }));
+                         console.log("clicked, likes are " + tuit.likes);
+                         }} className="bi
+                         bi-heart-fill me-2 text-danger"></i>
+                       </div>
                     <div> <FontAwesomeIcon icon="share"/></div>
         </div>
     </div>

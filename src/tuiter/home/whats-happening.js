@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import {createTuit} from "../reducers/home-tuits-reducer";
-import {useDispatch, useSelector} from "react-redux";
-
+import {createTuitThunk}
+  from "../../services/tuits-thunks";import {useDispatch, useSelector} from "react-redux";
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
  const dispatch = useDispatch();
@@ -9,7 +8,7 @@ const WhatsHappening = () => {
    const newTuit = {
      tuit: whatsHappening
    }
-   dispatch(createTuit(newTuit));
+   dispatch(createTuitThunk(newTuit));
  }
 
 const currProfile = useSelector(
