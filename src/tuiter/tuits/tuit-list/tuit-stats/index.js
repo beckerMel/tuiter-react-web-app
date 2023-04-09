@@ -15,7 +15,17 @@ const TuitStats = (
  }) => {
  const dispatch = useDispatch();
 
-
+const onLike = () => {
+    if (tuit.liked) {
+        dispatch(updateTuitThunk({...tuit,
+           likes: tuit.likes - 1,
+           liked: false}));
+    } else {
+        dispatch(updateTuitThunk({...tuit,
+           likes: tuit.likes + 1,
+           liked: true}));
+    }
+}
 
  return(
     <div className="row">
@@ -25,13 +35,11 @@ const TuitStats = (
                     <div> <FontAwesomeIcon icon ="retweet"
                     className="wd-icon"/>{tuit.retuits}</div>
                     <div>
-                         <i onClick={() => {
-                            dispatch(updateTuitThunk({
-                           ...tuit,
-                           likes: tuit.likes + 1
-                         }));
-                         console.log("clicked, likes are " + tuit.likes);
-                         }} className="bi bi-heart-fill me-2 text-danger"></i>
+                         <i onClick={onLike}
+                         className={tuit.liked ? "bi bi-heart-fill me-2 text-danger"
+                         :
+                         "bi bi-heart me-2"
+                         }></i>
                          {tuit.likes}
                        </div>
                     <div> <FontAwesomeIcon icon="share"/></div>
