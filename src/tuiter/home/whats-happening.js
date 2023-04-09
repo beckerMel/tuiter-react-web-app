@@ -6,6 +6,7 @@ const WhatsHappening = () => {
  const dispatch = useDispatch();
  const tuitClickHandler = () => {
    const newTuit = {
+     image: "../../images/golden_retriever_chewtoy.jpeg",
      tuit: whatsHappening
    }
    dispatch(createTuitThunk(newTuit));
