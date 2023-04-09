@@ -8,7 +8,7 @@ const WhatsHappening = () => {
    const newTuit = {
      image: "../../images/golden_retriever_chewtoy.jpeg",
      handle: "@gldn",
-     time: "now",
+     time: "2h",
      tuit: whatsHappening
    }
    dispatch(createTuitThunk(newTuit));
