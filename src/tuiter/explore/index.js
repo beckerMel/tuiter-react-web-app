@@ -7,7 +7,7 @@ return(
     <>
     <div id="search-bar-section" className="wd-flex-container flex-center-vertical">
         <form className="wd-search-bar mb-2">
-            <FontAwesomeIcon icon="search" className="wd-magnifying-glass me-3"/>
+            <i icon="search" className="wd-magnifying-glass me-3"/>
             <input type="text"
                    placeholder="Search Tuiter"/>
         </form>
